@@ -1,0 +1,155 @@
+.navbar-right {
+  margin-right: 0;
+}
+
+.navbar-form {
+  margin: 3px auto;
+}
+
+.btn-default {
+  color: #337AB7;
+}
+
+.form-reg {
+  padding-top: 10%;
+}
+
+.reg-msg {
+  margin-top: 50%;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.pastie-msg {
+  margin-top: 20%;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.getbtn {
+  border: 0;
+  background: transparent;
+}
+
+.input-group .form-control {
+  border-right: 0;
+  box-shadow:0 0 0; 
+  border-color:#ccc;
+}
+
+.hashtags-box {
+  color: #6E6E6E;
+  border: 1px solid #CCC;
+  background: #F9F1D2;
+}
+
+.hashtags-box p {
+  background: white;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 2%;
+  margin: 2% 2%;
+  cursor: pointer;
+  -webkit-user-select: none;      
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.cl {
+  background: #F5EABC;
+  color: #242424;
+  margin-bottom: 10px;
+}
+
+.p-title {
+  font-size: 18px;
+  
+}
+
+p.p-title small {
+  font-size: 70%;
+}
+
+.p-owner {
+  font-size: 12px;
+  font-weight: 600;
+  font-family:  tahoma ,sans-serif;
+  color: #646464;
+}
+
+.p-content {
+  padding: 2%;
+  background-color: white;
+}
+
+.p-pastie {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 3%;
+  background: #F8EFCD;
+}
+
+.wrap {
+  margin-top: 60px;
+}
+
+.animation {
+  opacity: 0;
+}
+
+footer {
+  background:#F5EABC;
+  color: #F5EABC;
+  width:100%;
+  text-align: center;
+  clear: both;
+  float: left;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+footer a span {
+  font-size: small;
+  color: #333;
+  cursor: default;
+  margin-left: -140px;
+  -moz-transition: .6s ease-in;
+  -o-transition: .6s ease-in;
+  -webkit-transition: .6s ease-in;
+  transition: .6s ease-in;
+}
+
+footer a {
+  font-size: small;
+  margin-top: 0.45rem;
+  margin-bottom: 0.45rem;
+  color: #F5EABC;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -moz-transition: .6s ease-in;
+  -o-transition: .6s ease-in;
+  -webkit-transition: .6s ease-in;
+  transition: .6s ease-in;
+}
+
+footer a:hover { 
+    color: #4074EE;
+}
+
+footer a:hover span {
+    opacity: 0; 
+}
+
+a:hover {
+  text-decoration: none;
+}

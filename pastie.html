@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html>
+  <!-- Andres Zuñiga (17270164) -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ATI - F2</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+ 
+  <body>
+
+    <nav class="navbar navbar-default">
+      <ul id="nav-signin" class="nav nav-tabs cl">
+        <li role="presentation"><a href="index.html">Pasties</a></li>
+        <li role="presentation" class="active"><a href="#">New Pastie</a></li>
+        <li id="reg-tab" class="navbar-right" role="presentation"><a href="register.html">Register</a></li>
+        <form id="form-signin" class="navbar-form navbar-right" method="post" onsubmit="mockSignin()">
+          <div class="form-group">
+              <input type="text" class="form-control" name="username" placeholder="Username">
+          </div>
+          <div class="form-group">
+              <input type="text" class="form-control" name="password" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-default">Sign In</button>
+        </form>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div id="pastie-div" class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
+          <h1>Create your pastie:</h1>
+          <hr>
+          <form id="form-pastie" method="post" onsubmit="mockPastie()">
+            <div class="form-group">
+              <input type="text" class="form-control" name="ptitle" placeholder="Title" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="pcontent" rows="15" placeholder="Content" required></textarea>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="phash" placeholder="#hashtag1#hashtag2..." pattern="(#[a-zA-Z0-9_-]{3,}){1,}" required>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>Public
+              </label>
+              <label>
+                <input type="radio" name="optionsRadios" id="radios2" value="option2">Private
+              </label>
+            </div>
+            <hr>
+            <button type="submit" class="btn btn-primary">Paste it!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <footer>
+        <a>Andres Zuñiga (17270164)<span>Copyright 2015 Andrez</span></a>
+        <!-- Andres Zuñiga (17270164) -->
+      </footer>
+    </div>
+
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/mockCalls.js"></script>
+  </body>
+</html>
+ 

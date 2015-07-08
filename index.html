@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<html>
+  <!-- Andres Zuñiga (17270164) -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ATI - F2</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+ 
+  <body>
+
+    <nav class="navbar navbar-default">
+      <ul id="nav-signin" class="nav nav-tabs cl">
+        <li role="presentation" class="active"><a href="#">Pasties</a></li>
+        <li role="presentation"><a href="pastie.html">New Pastie</a></li>
+        <li id="reg-tab" class="navbar-right" role="presentation"><a href="register.html">Register</a></li>
+        <form id="form-signin" class="navbar-form navbar-right" method="post" >
+          <div class="form-group">
+              <input id="form-username" type="text" class="form-control" name="username" placeholder="Username">
+          </div>
+          <div class="form-group">
+              <input id="form-pass" type="password" class="form-control" name="password" placeholder="Password">
+          </div>
+          <button id="login-btn" type="submit" class="btn btn-default">Sign In</button>
+        </form>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <div class="input-group">
+            <input id="search-input" type="text" class="form-control"  placeholder="Search" value="">
+            <span class="input-group-addon">
+                <button type="button" class="getbtn">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>  
+            </span>
+          </div>
+
+          <div id="hashsearch" class="hashtags-box">
+            <p>#hashsearch</p>
+            <p>#herp</p>
+            <p>#derp</p>
+            <p>#geegeedee</p>
+            <p>#random</p>
+            <p>#javert</p>
+            <p>#gtfo</p>
+            <p>#fun</p>
+            <p>#smh</p>
+            <p>...</p>
+          </div>
+        </div>
+
+        <div id="thy" class="col-lg-6 col-md-6 col-sm-6 col-xs-6"></div>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      <footer>
+        <a>Andres Zuñiga (17270164)<span>Copyright 2015 Andrez</span></a>
+        <!-- Andres Zuñiga (17270164) -->
+      </footer>
+    </div>
+
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/json-load.js"></script>
+  <script src="js/mockCalls.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+    $(document).ready( function() {
+      $(this).loadJSON();
+
+      $("#form-signin").bind('submit', function(e) {
+        e.preventDefault();
+        mockLogin();
+      });
+    });
+  </script>
+  </body>
+</html>
+ 

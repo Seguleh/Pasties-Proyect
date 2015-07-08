@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+  <!-- Andres Zuñiga (17270164) -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ATI - F2</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+ 
+  <body>
+
+    <nav class="navbar navbar-default">
+      <ul id="nav-signin" class="nav nav-tabs cl">
+        <li role="presentation"><a href="index.html">Pasties</a></li>
+        <li role="presentation"><a href="pastie.html">New Pastie</a></li>
+        <li role="presentation"><a href="mypasties.html">My Pasties</a></li>
+        <li class="navbar-right"><a href="index.html"><small>Logout</small></a></li>
+        <li class="navbar-right"><a href="#">Jon, Doe</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <h1>Profile</h1>
+          <hr>
+          <div class="row">
+              <div class="col-md-9">
+                <h3>Personal Info</h3>
+                <hr>
+                <form id="profile-form" class="form-horizontal" method="post">
+                  <div class="form-group">
+                    <label class="col-lg-4 control-label">First name:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" value="Jon" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-4 control-label">Last name:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" value="Doe" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-4 control-label">Email:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" value="jon.doe@pastie.com" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Username:</label>
+                    <div class="col-md-8">
+                      <input class="form-control" value="jondoe" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Password:</label>
+                    <div class="col-md-8">
+                      <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Confirm Password:</label>
+                    <div class="col-md-8">
+                      <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-8">
+                      <input type="submit" class="btn btn-primary" value="Save Changes" />
+                    </div>
+                  </div>
+                  <div id="profile-alert" class="alert alert-info alert-dismissable fade">
+                    <a class="panel-close close" data-dismiss="alert">×</a> 
+                    <i class="fa fa-coffee"></i>
+                    You changes have been <strong>saved</strong>.
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <footer>
+        <a>Andres Zuñiga (17270164)<span>Copyright 2015 Andrez</span></a>
+        <!-- Andres Zuñiga (17270164) -->
+      </footer>
+    </div>
+
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/pass-validation.js"></script>
+  <script src="js/mockCalls.js"></script>
+  </body>
+</html>
+ 
